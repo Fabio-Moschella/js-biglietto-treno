@@ -12,19 +12,25 @@ const prezzoOver65 = prezzoKm - scontoDel40;
 
 console.log(etautente);
 console.log(prezzoKm);
-console.log(scontoDel20);
+console.log(prezzoUnder18);
+console.log(prezzoOver65);
 
 if (etautente < 18)
   if (etautente < 18) {
-    // Se l'utente è < 18 e maggiore di 14
+    // Se l'utente è < 18
     //   Stampa il prezzo per gli under18
-    console.log("");
+    console.log(prezzoUnder18);
   } else if (etautente > 65) {
     // Se invece l'utente è > 65
     //   Stampa il prezzo per gli over65
-    console.log("");
+    console.log(prezzoOver65);
   } else {
     // Altrimenti
     //   Stampa il prezzo standard
-    console.log("");
+    console.log(prezzoKm);
   }
+
+// Validita controllo input ETA e KM..
+if (isNaN(etautente) && isNaN(kmPercorsi)) {
+  alert("devi inserire i numeri");
+}
