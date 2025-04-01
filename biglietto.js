@@ -1,3 +1,2 @@
 const chilometri = prompt("Quanti chilometri devi percorrere?");
-
-console.log(parseInt(chilometri));
+const kmPercorsi = parseInt(prompt("Quanti chilometri devi percorrere?"));
